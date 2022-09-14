@@ -11,14 +11,14 @@
   </head>
   <body>
     <div class="header">
-      <h2>WELLCOME TO MY BLOG</h2>
+      <h2 style="color: purple">WELLCOME TO MY BLOG</h2>
     </div>
 
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
-          <h2>Local Storage VS Session Storage</h2>
-          <h5>Title description, Dec 7, 2017</h5>
+          <h2 style="color: green">Local Storage VS Session Storage</h2>
+          <h5>Title description: Dec 7, 2020</h5>
           <div class="fakeimg" style="min-height: 200px">
             <table style="width: 100%">
               <tr>
@@ -65,32 +65,117 @@
               </tr>
             </table>
           </div>
-          <p>Some text..</p>
         </div>
+
         <div class="card">
-          <h2>Global Scope VS Block Scope</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg" style="height: 200px">Image</div>
-          <p>Some text..</p>
+          <h2 style="color: green">Global Scope VS Block Scope</h2>
+          <h5>Title description: Sep 2, 2022</h5>
+          <div class="fakeimg" style="min-height: 200px">
+            <table style="width: 100%">
+              <tr>
+                <th>Local Scope</th>
+                <th>Global Scope</th>
+              </tr>
+              <tr>
+                <td>
+                  Local Scope occurs when we create a variable inside a
+                  function.
+                </td>
+                <td>
+                  A variable declared at the top of a program or outside of a
+                  function is considered a global scope variable.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Variable can also have a local scope. That's why it can only
+                  be accessed within a function.
+                </td>
+                <td>
+                  The value of a global variable can be changed or access inside
+                  a function
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 style="color: green">
+            When will we get undefined in javascript?
+          </h2>
+          <h5>Title description: Sep 15, 2022</h5>
+          <div class="fakeimg" style="min-height: 200px">
+            <p>
+              <strong>8 ways to get undefined..</strong> <br /><br />
+              <br />
+              <br />
+              1. variable that is not initialized <br />
+              <br />
+              2. function with no return <br />
+              <br />
+              3.parameter that is not passed <br />
+              <br />
+              4. If return has nothing on the right side <br />
+              <br />
+              5. property that doesn't exists on an object <br />
+              <br />
+              6. accessing array elements outside of the index range <br />
+              <br />
+              7. deleting an element inside an array 8. set a value is directly
+              to undefined
+            </p>
+          </div>
         </div>
       </div>
+
       <div class="rightcolumn">
         <div class="card">
-          <h2>How does the Event Loop works in JavaScript?</h2>
-          <div class="fakeimg" style="height: 100px">Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <h2 style="color: green">
+            How does the Event Loop works in JavaScript?
+          </h2>
+          <div
+            class="fakeimg"
+            style="min-height: 100px; background-color: #875180"
+          >
+            <img src="eventLoop.png" alt="" />
+          </div>
+          <p style="background-color: #875180; color: white; padding: 10px">
+            The above diagram demonstrates the basic workflow between the Event
+            Loop and the Task Queue. <br />
+            <br />
+            Before we discuss the event loop, lets first go through the function
+            of the task queue. <br />
+
+            Back to our timeout example, once the Web API finishes executing the
+            task, it doesn’t just push it back to the Call Stack automatically.
+            It goes to the Task Queue. <br /><br />
+
+            A queue is a data structure that works on the First in First out
+            principle, so as tasks get pushed into the queue, they get out in
+            that same order. Tasks that have been executed by the Web API’s,
+            which are being pushed to the Task Queue, then go back to the Call
+            Stack to get their result printed out.
+
+            <br /><br />
+            <br />The event loop is a process that waits for the Call Stack to
+            be clear before pushing callbacks from the Task Queue to the Call
+            Stack. Once the Stack is clear, the event loop triggers and checks
+            the Task Queue for available callbacks. If there are any, it pushes
+            it to the Call Stack, waits for the Call Stack to be clear again,
+            and repeats the same process. <br /><br />While this is a very basic
+            introduction, the concept of asynchronous programming in JavaScript
+            gives enough insight to clearly understand what is going on under
+            the hood and how JavaScript is able to run concurrently and
+            asynchronously with just a single thread.
+          </p>
         </div>
+
         <div class="card">
-          <h3>When we get undefined in javascript?</h3>
-          <div class="fakeimg">Image</div>
-          <br />
-          <div class="fakeimg">Image</div>
-          <br />
-          <div class="fakeimg">Image</div>
-        </div>
-        <div class="card">
-          <h3>Follow Me</h3>
-          <p>Some text..</p>
+          <h3>References</h3>
+          <p>https://www.w3schools.com/js/</p>
+          <p>https://stackoverflow.com/</p>
+          <p>https://www.javatpoint.com/javascript-tutorial</p>
         </div>
       </div>
     </div>

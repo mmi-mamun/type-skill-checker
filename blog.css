@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +8,7 @@ body {
   font-family: Arial;
   padding: 20px;
   background: #f1f1f1;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 table,
@@ -15,6 +18,11 @@ th {
 td {
   border: 1px solid black;
   padding: 10px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }
 
 /* Header/Blog Title */
