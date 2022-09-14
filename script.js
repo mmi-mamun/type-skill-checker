@@ -155,7 +155,7 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpentFloat = (currentTime - startTime) / 1000;
-  const timeSpent = parseInt(timeSpentFloat);
+  const timeSpent = parseInt(timeSpentFloat);        // modified: for visual seconds as integer
 
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
