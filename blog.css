@@ -8,6 +8,15 @@ body {
   background: #f1f1f1;
 }
 
+table,
+th {
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
 /* Header/Blog Title */
 .header {
   padding: 30px;

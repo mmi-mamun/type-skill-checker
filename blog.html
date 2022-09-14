@@ -19,7 +19,52 @@
         <div class="card">
           <h2>Local Storage VS Session Storage</h2>
           <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height: 200px">Body details</div>
+          <div class="fakeimg" style="min-height: 200px">
+            <table style="width: 100%">
+              <tr>
+                <th>Local Storage</th>
+                <th>Session Storage</th>
+              </tr>
+              <tr>
+                <td>
+                  This read-only interface property provides access to the
+                  Document’s local storage object, the stored data is stored
+                  across browser sessions. It is cleared when the last “private”
+                  tab of a browser is closed (localStorage data for a document
+                  loaded in a private browsing or incognito session).
+                </td>
+                <td>
+                  Session Storage objects can be accessed using the
+                  sessionStorage read-only property. <br /><br />
+                  The difference between sessionStorage and localStorage is that
+                  localStorage data does not expire, whereas sessionStorage data
+                  is cleared when the page session ends.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  If a document is loaded from a file: URL (that is, directly
+                  from the user’s local file system instead of being loaded from
+                  the server) the requirements for behavior are undefined and
+                  may vary among different browsers. Each file appears to be
+                  returned a different object by localStorage in all current
+                  browsers: URL. Essentially, it seems to be a case of each URL:
+                  file having its own unique local storage area.
+                </td>
+                <td>
+                  A unique page session gets created once a document is loaded
+                  in a browser tab. Page sessions are valid for only one tab at
+                  a time. Pages are only saved for the amount of time that the
+                  tab or the browser is open; they do not persist after the page
+                  reloads and restores. Each tab/window that is opened with the
+                  same URL creates its own sessionStorage.When you duplicate a
+                  tab, the sessionStorage from the original tab is copied to the
+                  duplicated tab. Closing a window/tab ends the session and
+                  clears sessionStorage objects.
+                </td>
+              </tr>
+            </table>
+          </div>
           <p>Some text..</p>
         </div>
         <div class="card">
