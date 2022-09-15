@@ -160,27 +160,33 @@ button {
 #histories {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: start;
 }
 
 .card {
-  width: 100%;
+  width: 31%;
   height: 100%;
-  padding: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
-  background: rgb(255, 255, 255);
   background: linear-gradient(
     92.49deg,
     rgba(255, 255, 255, 0.1) 0.18%,
     rgba(255, 255, 255, 0.05) 99.85%
   );
   backdrop-filter: blur(5px);
-  margin-bottom: 30px;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px 5px;
+  min-height: 160px;
+}
+
+.card p {
+  width: 100%;
 }
 
 /* modified */
@@ -210,5 +216,6 @@ button {
   }
   .card {
     flex-direction: column;
+    width: 100%;
   }
 }
