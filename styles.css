@@ -182,6 +182,11 @@ button {
   margin-bottom: 30px;
 }
 
+/* modified */
+.card h3 {
+  flex-basis: 60%;
+}
+
 #modal-background {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -196,7 +201,8 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+/* max 768px size for mobile device */
+@media only screen and (max-width: 768px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
